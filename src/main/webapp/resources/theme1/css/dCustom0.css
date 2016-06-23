@@ -1,0 +1,151 @@
+/*
+ * This code is for Internal Salesforce use only, and subject to change without notice.
+ * Customers shouldn't reference this file in any web pages.
+ */
+.Custom34Tab .primaryPalette, .individualPalette .Custom34Block .primaryPalette
+	{
+	background-color: #c39567;
+	border-color: #c39567
+}
+
+.Custom34Tab .secondaryPalette, .individualPalette .Custom34Block .secondaryPalette
+	{
+	background-color: #c39567;
+	border-color: #c39567
+}
+
+.Custom34Tab .tertiaryPalette, .individualPalette .Custom34Block .tertiaryPalette,
+	.layoutEdit .individualPalette .Custom34Block .tertiaryPalette {
+	background-color: #bca78f;
+	border-color: #bca78f
+}
+
+.Custom34Tab .bgdPalette {
+	background-color: #c39567
+}
+
+.Custom34Tab .brdPalette {
+	border-top-color: #c39567
+}
+
+.Custom34Tab .listViewport .subNav .linkBar, .Custom34Tab .mComponent .cHeader,
+	.Custom34Tab .genericTable, .Custom34Tab .bSubBlock, .Custom34Tab .bPageBlock
+	{
+	border-top: 3px solid #c39567
+}
+
+.bodyDiv .mruList.individualPalette .Custom34Block .secondaryPalette .pbHeader,
+	.bodyDiv .hoverDetail .Custom34Block .secondaryPalette .pbHeader,
+	.lookupHoverDetail .Custom34Block .secondaryPalette .pbHeader,
+	.chatterHover .Custom34Block .secondaryPalette .pbHeader, .chatterHover .Custom34Block .secondaryPalette
+	{
+	border-color: #c39567
+}
+
+.Custom34Tab .pageTitleIcon, .individualPalette .Custom34Block .pageTitleIcon
+	{
+	background-image: url(/img/icon/insect32.png);
+	background-position: 0 0;
+	width: 32px;
+	height: 32px
+}
+
+.Custom34Mru .mruIcon {
+	background-image: url(/img/icon/insect16.png);
+	background-position: 0 0;
+	width: 16px;
+	height: 16px
+}
+
+.bRelatedList .Custom34Block .relatedListIcon, .allTabTab .Custom34Block .relatedListIcon
+	{
+	background-image: url(/img/icon/insect24.png);
+	background-position: 0 0;
+	width: 24px;
+	height: 24px
+}
+
+.bRelatedList .Custom34Block .relatedListIcon {
+	position: relative;
+	margin-top: -4px;
+	margin-left: 5px;
+	display: inline
+}
+
+.bRelatedList .Custom34Block .pbTitle h3 {
+	margin: 3px 0 0 27px
+}
+
+.Custom9Tab .primaryPalette, .individualPalette .Custom9Block .primaryPalette
+	{
+	background-color: #6aacd8;
+	border-color: #6aacd8
+}
+
+.Custom9Tab .secondaryPalette, .individualPalette .Custom9Block .secondaryPalette
+	{
+	background-color: #6aacd8;
+	border-color: #6aacd8
+}
+
+.Custom9Tab .tertiaryPalette, .individualPalette .Custom9Block .tertiaryPalette,
+	.layoutEdit .individualPalette .Custom9Block .tertiaryPalette {
+	background-color: #94b9d1;
+	border-color: #94b9d1
+}
+
+.Custom9Tab .bgdPalette {
+	background-color: #6aacd8
+}
+
+.Custom9Tab .brdPalette {
+	border-top-color: #6aacd8
+}
+
+.Custom9Tab .listViewport .subNav .linkBar, .Custom9Tab .mComponent .cHeader,
+	.Custom9Tab .genericTable, .Custom9Tab .bSubBlock, .Custom9Tab .bPageBlock
+	{
+	border-top: 3px solid #6aacd8
+}
+
+.bodyDiv .mruList.individualPalette .Custom9Block .secondaryPalette .pbHeader,
+	.bodyDiv .hoverDetail .Custom9Block .secondaryPalette .pbHeader,
+	.lookupHoverDetail .Custom9Block .secondaryPalette .pbHeader,
+	.chatterHover .Custom9Block .secondaryPalette .pbHeader, .chatterHover .Custom9Block .secondaryPalette
+	{
+	border-color: #6aacd8
+}
+
+.Custom9Tab .pageTitleIcon, .individualPalette .Custom9Block .pageTitleIcon
+	{
+	background-image: url(/img/icon/lightning32.png);
+	background-position: 0 0;
+	width: 32px;
+	height: 32px
+}
+
+.Custom9Mru .mruIcon {
+	background-image: url(/img/icon/lightning16.png);
+	background-position: 0 0;
+	width: 16px;
+	height: 16px
+}
+
+.bRelatedList .Custom9Block .relatedListIcon, .allTabTab .Custom9Block .relatedListIcon
+	{
+	background-image: url(/img/sprites/master.png);
+	background-position: 0 -726px;
+	width: 24px;
+	height: 24px
+}
+
+.bRelatedList .Custom9Block .relatedListIcon {
+	position: relative;
+	margin-top: -4px;
+	margin-left: 5px;
+	display: inline
+}
+
+.bRelatedList .Custom9Block .pbTitle h3 {
+	margin: 3px 0 0 27px
+}

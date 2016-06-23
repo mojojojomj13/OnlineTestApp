@@ -1,0 +1,1879 @@
+/*
+ * This code is for Internal Salesforce use only, and subject to change without notice.
+ * Customers shouldn't reference this file in any web pages.
+ */
+.hidden {
+	display: none
+}
+
+.textBlock {
+	float: left;
+	margin-left: 15px
+}
+
+.topName {
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 23px;
+	vertical-align: text-top;
+	height: 22px;
+	display: block
+}
+
+.headerPhotoContainer {
+	float: left;
+	height: 65px;
+	text-align: center;
+	width: 67px
+}
+
+.socialTabContent {
+	overflow: hidden
+}
+
+.socialProfilePhoto {
+	max-height: 65px;
+	max-width: 67px
+}
+
+.socialRow {
+	margin: 0
+}
+
+.socialClear {
+	clear: both
+}
+
+.socialHideOutline {
+	outline: none
+}
+
+.socialListItem {
+	color: #222;
+	list-style-type: disc;
+	margin: 0;
+	padding: 0
+}
+
+.socialList {
+	margin: 0;
+	padding: 0
+}
+
+.socialLoadingIndicator {
+	display: inline-block;
+	height: 32px;
+	width: 32px
+}
+
+.socialCenter {
+	left: 50%;
+	margin: -16px 0 0 -16px;
+	position: absolute;
+	top: 50%
+}
+
+.socialSignOutLink {
+	cursor: pointer;
+	position: absolute;
+	right: 21px;
+	bottom: 20px;
+	text-decoration: none
+}
+
+#socialHopupLoadingStage {
+	height: 300px;
+	z-index: 999
+}
+
+#socialHopup {
+	background: none repeat scroll 0 0 white;
+	border: 1px solid #f1f1f1;
+	border-radius: 6px 6px 6px 6px;
+	left: 362px;
+	position: absolute !important;
+	top: 56px;
+	width: 680px;
+	word-wrap: break-word;
+	z-index: 10990;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	outline: none
+}
+
+#socialHopupStageContainer {
+	background: url("/img/social/stage_slice.png") repeat-x scroll left top
+		white;
+	float: left;
+	min-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	outline: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px
+}
+
+#socialHopupStageContainer #socialHopupStageHelpLink {
+	margin: 10px 10px 0;
+	text-align: right
+}
+
+#socialHopupStageContainer #socialHopupStageHelpLink .hopupHelpText {
+	text-decoration: none
+}
+
+#socialHopupStageContainer #socialHopupStageHelpLink .hopupHelpIcon {
+	margin-left: 5px
+}
+
+#socialHopupStage, .socialHopupStage {
+	outline: none;
+	padding: 10px;
+	width: 660px
+}
+
+.socialTabBar {
+	background: url("/img/social/topbar_slice.png") repeat-x scroll left top
+		transparent;
+	color: #015ba7;
+	cursor: move;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	height: 40px;
+	padding: 0 20px;
+	width: 640px;
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0
+}
+
+.socialTabActive .socialTabText {
+	color: black !important
+}
+
+.socialTabTop {
+	cursor: pointer;
+	margin-left: -10px;
+	float: left
+}
+
+.socialTabActive .socialTabLeft {
+	background: url("/img/social/topbar_selectedtab_leftside.png") no-repeat
+		scroll left top transparent;
+	height: 100%
+}
+
+.socialTabActive .socialTabRight {
+	background: url("/img/social/topbar_selectedtab_rightside.png")
+		no-repeat scroll right top transparent;
+	height: 100%
+}
+
+.socialTabActive.socialTabTop {
+	background: url("/img/social/topbar_selectedtab_slice.png") repeat-x
+		scroll left top transparent;
+	height: 100%
+}
+
+.socialTabText {
+	display: inline-block;
+	margin: 13px;
+	padding-left: 20px;
+	text-decoration: none !important
+}
+
+.socialTabTop[type="fb"] .socialTabText {
+	background:
+		url("/img/social/social_networking_iconpack/facebook_16.png?v=2")
+		no-repeat scroll left top transparent
+}
+
+.socialTabTop[type="li"] .socialTabText {
+	background:
+		url("/img/social/social_networking_iconpack/linkedin_16.png?v=2")
+		no-repeat scroll left top transparent
+}
+
+.socialTabTop[type="tw"] .socialTabText {
+	background:
+		url("/img/social/social_networking_iconpack/twitter_16.png?v=2")
+		no-repeat scroll left top transparent
+}
+
+.socialTabTop[type="yt"] .socialTabText {
+	background:
+		url("/img/social/social_networking_iconpack/youtube_16.png?v=2")
+		no-repeat scroll left top transparent
+}
+
+.socialTabTop[type="kl"] .socialTabText {
+	background:
+		url("/img/social/social_networking_iconpack/klout_16.png?v=2")
+		no-repeat scroll left top transparent
+}
+
+.socialHopupCloseButton {
+	background: url("/img/social/closeX.png") repeat scroll 0 0 transparent;
+	cursor: pointer;
+	height: 20px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 20px;
+	overflow: hidden
+}
+
+.socialHopupCloseButton:hover {
+	background-position: left -20px
+}
+
+.socialHopupCloseButton:active {
+	background-position: left -40px
+}
+
+.socialBlock {
+	display: inline-block;
+	text-decoration: none
+}
+
+.socialProfileTopText {
+	float: left;
+	overflow: hidden
+}
+
+.socialTwitterProfileTopText {
+	width: 345px
+}
+
+.socialFacebookBlurbs {
+	float: left;
+	font-size: 11.5px;
+	line-height: 1.3em;
+	margin: 5px 0;
+	text-shadow: 0 1px 0 #fff;
+	width: 290px;
+	margin-top: 0
+}
+
+.socialMainContent {
+	float: left;
+	margin: 15px 0 20px;
+	min-height: 200px;
+	padding: 2px;
+	width: 650px
+}
+
+.socialButton {
+	color: #333 !important;
+	margin-top: -2px;
+	padding: 4px 9px !important
+}
+
+.socialButton:hover {
+	text-decoration: none !important
+}
+
+.socialButton.btnPressed {
+	color: #666 !important
+}
+
+.socialButton.btnPressed:hover {
+	background-position: left -60px !important
+}
+
+.socialInput {
+	border: 1px solid #b6b6b6;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 1px 1px #969696 inset;
+	margin: 10px 0;
+	padding: 6px 5px 4px;
+	width: 300px;
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px #969696 inset;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 1px #969696 inset
+}
+
+.socialResultsCount {
+	font-size: 15px;
+	font-weight: bold
+}
+
+.socialSearchingMessage {
+	height: 320px;
+	width: 636px
+}
+
+.socialSearchStage {
+	height: 500px !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0 !important;
+	width: 680px !important;
+	position: relative
+}
+
+.socialSearch {
+	min-height: 445px;
+	padding: 10px 10px 45px;
+	position: absolute
+}
+
+.socialSearchResultsStyle {
+	background-color: #ecf2f3;
+	float: left;
+	font-size: 14px;
+	margin: 5px;
+	padding: 8px 10px;
+	width: 616px
+}
+
+.socialSearchResult {
+	background-color: white;
+	border: 1px solid #d4dadc;
+	border-radius: 5px 5px 5px 5px;
+	cursor: pointer;
+	float: left;
+	font-size: 12px;
+	height: 62px;
+	margin: 8px;
+	padding: 10px;
+	width: 268px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px
+}
+
+.socialSearchResultImg {
+	border: 1px solid #d4dadc;
+	float: left;
+	max-height: 50px;
+	max-width: 50px
+}
+
+.socialSearchResultImageContainer {
+	float: left;
+	height: 50px;
+	width: 50px
+}
+
+.socialSearchResult:hover {
+	background-color: #e3f3ff;
+	border: 1px solid #9cf
+}
+
+.socialSearchResultTextContainer {
+	float: left;
+	height: 64px;
+	margin-left: 10px;
+	padding: 1px;
+	overflow: hidden;
+	width: 203px
+}
+
+.socialSearchUpperBox {
+	padding: 8px 12px 0
+}
+
+.socialSearchText {
+	margin: 7px 0;
+	display: inline !important
+}
+
+.socialSearchTextLight {
+	color: #444 !important
+}
+
+.socialSearchSelectedSearchBox {
+	color: black
+}
+
+.socialSearchName {
+	font-size: 14px;
+	font-weight: bold;
+	height: 16px;
+	line-height: 15px;
+	overflow: hidden;
+	text-decoration: none
+}
+
+.socialSearchSubName {
+	color: #777;
+	font-size: 85%;
+	font-weight: normal
+}
+
+.socialSearchDescription1 {
+	color: #444;
+	height: 15px;
+	margin-bottom: 4px;
+	overflow: hidden
+}
+
+.socialSearchDescription2 {
+	color: #444;
+	height: 15px;
+	margin-bottom: 4px;
+	overflow: hidden
+}
+
+.socialSearchDescription3 {
+	color: #444;
+	height: 15px;
+	margin-bottom: 4px;
+	overflow: hidden
+}
+
+.socialSigninButton {
+	float: left;
+	margin: 37px 0 0 10px;
+	cursor: pointer;
+	height: 22px;
+	text-decoration: none !important
+}
+
+.socialSigninLeft {
+	display: block;
+	padding-left: 24px;
+	background-repeat: no-repeat
+}
+
+.socialSigninButton:hover.socialSigninLeft {
+	background-position: 0 -24px
+}
+
+.socialSigninButton:active.socialSigninLeft {
+	background-position: 0 -48px
+}
+
+.socialSigninFacebookLeft {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/facebook_signin_left.png")
+}
+
+.socialSigninTwitterLeft {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/twitter_signin1_left.png")
+}
+
+.socialSigninLinkedInLeft {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/linkedin_signin_left.png")
+}
+
+.socialSigninRight {
+	display: block;
+	height: 100%;
+	padding-right: 3px;
+	background-repeat: no-repeat;
+	background-position: right top
+}
+
+.socialSigninButton:hover .socialSigninRight {
+	background-position: right -24px
+}
+
+.socialSigninButton:active .socialSigninRight {
+	background-position: right -48px
+}
+
+.socialSigninFacebookRight {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/facebook_signin_right.png")
+}
+
+.socialSigninTwitterRight {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/twitter_signin1_right.png")
+}
+
+.socialSigninLinkedInRight {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/linkedin_signin_right.png")
+}
+
+.socialSigninCenter {
+	display: block;
+	height: 100%;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 22px;
+	vertical-align: middle;
+	padding: 0 8px;
+	white-space: nowrap;
+	background-repeat: repeat-x
+}
+
+.socialSigninButton:hover .socialSigninCenter {
+	background-position: 0 -24px
+}
+
+.socialSigninButton:active .socialSigninCenter {
+	background-position: 0 -48px
+}
+
+.socialSigninFacebookCenter {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/facebook_signin_slice.png");
+	color: #fff;
+	text-shadow: 1px 1px 1px #5073a3
+}
+
+.socialSigninTwitterCenter {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/twitter_signin1_slice.png");
+	color: #fff;
+	text-shadow: 1px 1px 1px #2b8eb4
+}
+
+.socialSigninLinkedInCenter {
+	background-image:
+		url("/img/social/social_signin_buttons_icons/linkedin_signin_slice.png");
+	color: #555;
+	text-shadow: 1px 1px 1px #e8e7e7
+}
+
+.socialOauthMainText {
+	font-size: 16px;
+	margin: 13px 6px 6px
+}
+
+.socialOauthCenterbox {
+	background-color: #eef1f1;
+	padding: 15px
+}
+
+.socialOauthExplanationText {
+	margin: 10px
+}
+
+.socialSignupLink {
+	color: black;
+	font-weight: bold
+}
+
+.socialOauthArrow {
+	float: left;
+	margin: 31px 0 0 15px
+}
+
+.socialOauthSampleResult {
+	margin: 5px 0 0 15px
+}
+
+.socialActionsBar {
+	border-top: 2px solid #d4dadc;
+	float: left;
+	height: auto;
+	margin: 10px 10px 0;
+	padding: 13px 5px 5px;
+	text-align: center;
+	width: 630px;
+	min-height: 15px
+}
+
+.socialActionsBar .socialButton {
+	visibility: hidden
+}
+
+.socialProfileName {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 7px;
+	margin-right: 6px;
+	text-transform: capitalize;
+	display: inline !important
+}
+
+.socialViewFullProfile {
+	color: #1f6eb0;
+	margin-left: 4px;
+	text-decoration: none
+}
+
+.socialProfileTopBlock {
+	background-color: #eef1f1;
+	float: left;
+	padding-bottom: 10px;
+	width: 660px
+}
+
+.socialProfilePic {
+	float: left;
+	margin: 10px 0 0 10px;
+	max-height: 80px;
+	max-width: 80px;
+	min-width: 53px
+}
+
+.socialProfileLeftTop {
+	float: left;
+	padding: 10px;
+	width: 303px
+}
+
+.socialProfileRightTop {
+	float: left;
+	margin: 10px 10px 0 0
+}
+
+.socialTwitterProfileLeftTop {
+	width: 346px !important
+}
+
+.socialTwitterScreenName {
+	clear: both;
+	color: #444;
+	font-size: 17px;
+	font-weight: bold;
+	background: url('/img/social/bird_16_gray.png') no-repeat scroll 0 2px
+		transparent;
+	padding: 0 0 0 20px
+}
+
+.socialTwitterLocation {
+	color: #464646;
+	margin-left: 4px;
+	text-shadow: 0 1px 0 #fff
+}
+
+.socialTwitterBio {
+	color: #7e7e7e;
+	font-size: 13px;
+	font-style: italic;
+	margin: 5px 0;
+	text-shadow: 0 1px 0 #fff
+}
+
+.socialTwitterUrl {
+	color: #2e77b5
+}
+
+.socialTwitterFollowersLink {
+	color: black !important;
+	text-decoration: none !important;
+	border: 0;
+	cursor: pointer
+}
+
+.socialTwitterFollowingImages {
+	height: 27px;
+	width: 170px
+}
+
+.socialTwitterFollowImage {
+	height: 27px;
+	width: 27px
+}
+
+.socialTwitterFollowingImageWrapper {
+	float: left;
+	height: 27px;
+	margin-right: 7px;
+	width: 27px
+}
+
+.socialTwitterFollowers {
+	margin-bottom: 5px
+}
+
+.socialTwitterFollowBoxLabel {
+	margin-bottom: 3px;
+	display: block !important;
+	font-weight: normal !important
+}
+
+.socialTwitterValue {
+	color: #015ba7;
+	font-weight: bold
+}
+
+.socialTwitterTab {
+	border-left: 2px solid #eee;
+	border-right: 2px solid #eee;
+	border-top: 2px solid #eee;
+	height: 23px;
+	margin-top: 15px;
+	padding: 6px 0 1px 11px;
+	width: 59px
+}
+
+.socialTweet {
+	border-top: 1px solid #ebebeb;
+	float: left;
+	height: auto;
+	overflow: hidden;
+	width: 630px
+}
+
+.socialTweetName {
+	color: #9e9ea3;
+	font-size: 13px
+}
+
+.socialTweetScreenName {
+	color: #333;
+	font-size: 14px;
+	font-weight: bold
+}
+
+.socialTweetText {
+	color: #4b4b4b;
+	margin-bottom: 5px;
+	z-index: 2
+}
+
+.socialTwitterFavorite {
+	margin-top: -3px
+}
+
+.socialTwitterProfileTweets {
+	float: left;
+	height: 380px;
+	overflow-y: scroll;
+	width: 658px
+}
+
+.socialTwitterAccTweets {
+	width: 650px !important
+}
+
+.socialP {
+	margin: 10px 0
+}
+
+.socialTwitterLink {
+	color: #015ba7;
+	vertical-align: top
+}
+
+.socialTweetRightSide {
+	float: left;
+	margin: 10px 10px 10px 10px;
+	width: 538px
+}
+
+.socialTweetPhoto {
+	float: left;
+	margin: 10px;
+	max-height: 50px;
+	max-width: 50px;
+	border: 0
+}
+
+.socialTweetLink {
+	color: #015ba7 !important;
+	font-size: 11px;
+	margin-left: 2px;
+	text-decoration: none !important;
+	vertical-align: top
+}
+
+.socialTweetTime {
+	background: url("/img/social/twitter_bird.png") no-repeat scroll left
+		top transparent;
+	color: #b8b8b8 !important;
+	float: left;
+	font-size: 11px;
+	min-height: 12px;
+	padding-left: 20px;
+	margin-right: 8px;
+	text-decoration: none
+}
+
+.socialTweetTimeLink {
+	text-decoration: none
+}
+
+.socialLinkedInAddConnections {
+	background: url("/img/social/linkedin_connect_arrow.png") no-repeat
+		scroll left 2px transparent;
+	color: #015ba7;
+	display: block;
+	margin-top: 10px;
+	padding-left: 14px;
+	text-decoration: none
+}
+
+.socialLinkedInSharedConnections {
+	background-color: white;
+	border-bottom: 2px solid #c8e3f2;
+	color: #71a3ce;
+	float: right;
+	height: 83px;
+	overflow: hidden;
+	padding: 10px;
+	width: 293px
+}
+
+.socialLinkedInSharedConnectionName {
+	color: #015ba7;
+	float: left;
+	font-size: 13px;
+	height: 16px;
+	margin: 2px 0 0 0;
+	overflow: hidden;
+	width: 132px
+}
+
+.socialLinkedInSharedConnectionsHeader {
+	color: #777;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 17px;
+	margin-bottom: 4px;
+	display: block !important
+}
+
+.socialLinkedInMainContent {
+	margin-top: 20px
+}
+
+.socialLinkedInInfobox {
+	background: url("/img/social/linkedin_dotted_line.png") repeat-x scroll
+		0 0 transparent;
+	margin: 8px 0;
+	overflow: hidden;
+	padding-top: 8px;
+	width: 100%
+}
+
+.socialLinkedInCurrent {
+	background: none repeat scroll 0 0 transparent !important
+}
+
+.socialInfoboxDottedSeparator {
+	background: url("/img/social/linkedin_dotted_line.png") repeat-x scroll
+		0 0 transparent;
+	overflow: hidden;
+	width: 100%;
+	height: 1px
+}
+
+.socialLinkedInUpgradeInfoBox {
+	padding: 20px;
+	text-align: center
+}
+
+.socialLinkedInUpgradeButton {
+	margin-left: 15px !important;
+	padding: 4px 12px !important;
+	height: 33px
+}
+
+.socialLinkedInUpgradeButtonContent {
+	background: url("/img/social/linkedin_upgrade_button_icon.png")
+		no-repeat scroll right top transparent;
+	padding: 1px 20px 1px 0
+}
+
+.socialLinkedInProfileTopText {
+	width: 545px !important;
+	margin-bottom: 5px
+}
+
+.socialLinkedInLeftTop {
+	padding-left: 15px;
+	width: 545px !important
+}
+
+.socialLinkedInList {
+	margin-left: 155px
+}
+
+.socialLinkedInListItem {
+	
+}
+
+.socialLinkedInInfoboxHeader {
+	color: #666;
+	float: left;
+	font-weight: normal
+}
+
+.socialLinkedInLocation {
+	color: #777;
+	font-size: 13px;
+	margin-top: 4px
+}
+
+.socialLinkedInHeadline {
+	clear: both;
+	font-size: 13px;
+	margin-top: 10px
+}
+
+.socialLinkedInName {
+	color: #333
+}
+
+.socialLinkedInConnectedDistance {
+	background: -moz-linear-gradient(center top, #C7EBF6, #FFFFFF) repeat
+		scroll 0 0 transparent;
+	border: 1px solid #39c;
+	border-radius: 6px 6px 6px 6px;
+	color: #39c;
+	display: inline-block;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 12px;
+	margin-top: -4px;
+	padding: 0 4px;
+	text-align: center;
+	vertical-align: middle;
+	width: 20px
+}
+
+.socialFacebookProfileTopLeft {
+	width: 290px
+}
+
+.socialFacebookMutualFriends {
+	border-top: 1px solid #e2e2e2;
+	color: #3c5998;
+	height: 93px;
+	padding: 5px 0 0 2px;
+	width: 235px
+}
+
+.socialFacebookMutualFriendCount {
+	padding: 2px 0 0 2px
+}
+
+.socialFacebookMutualFriendImage {
+	height: 32px;
+	width: 32px
+}
+
+.socialMutualFriendsHeader {
+	color: #333;
+	font-weight: bold;
+	display: block !important
+}
+
+.socialFacebookMutualFriendsImages {
+	height: 32px;
+	margin: 10px 0;
+	width: 240px
+}
+
+.socialFacebookFriendshipLink {
+	color: inherit;
+	cursor: pointer;
+	float: right;
+	text-decoration: none
+}
+
+.socialFacebookMutualFriendsImageWrapper {
+	float: left;
+	height: 32px;
+	margin-right: 2px;
+	width: 32px
+}
+
+.socialFacebookStatusText {
+	color: #363636;
+	font-family: Verdana;
+	font-size: 100%;
+	margin-top: 8px;
+	padding-left: 10px
+}
+
+.socialFacebookInfobox {
+	float: left;
+	margin-top: 15px;
+	padding: 4px;
+	width: 315px
+}
+
+.socialFacebookInfoboxHeader {
+	background-color: #f2f2f2;
+	border-bottom: medium none;
+	border-top: 1px solid #e2e2e2;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 4px 5px 5px;
+	display: block !important
+}
+
+.socialFacebookIcon {
+	background-position: 0 3px;
+	background-repeat: no-repeat;
+	color: #777;
+	margin-right: 4px;
+	overflow: hidden;
+	z-index: 10000
+}
+
+.socialFacebookIconHightlight {
+	color: #6a81b1
+}
+
+.socialFacebookStatus {
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	display: block !important
+}
+
+.socialFacebookStatusTime {
+	color: #898989;
+	font-size: 11px
+}
+
+.socialFacebookListItem {
+	margin-left: 14px !important;
+	margin-top: 4px !important
+}
+
+.socialFacebookLink {
+	text-decoration: none
+}
+
+.socialErrorMessage {
+	font-size: 14px;
+	padding: 40px;
+	position: absolute
+}
+
+.socialHelpText {
+	font-size: 12px;
+	color: #777;
+	margin: 8px 0
+}
+
+.socialLearnMore {
+	cursor: pointer
+}
+
+a.socialViewFullProfile {
+	display: inline-block;
+	margin: 3px 1px 5px
+}
+
+.socialGuidedTourContainer {
+	padding: 0 5px 5px
+}
+
+.socialGuidedTourTitle {
+	font-size: 1.15em;
+	font-weight: bold
+}
+
+.socialGuidedTourTitle.new {
+	color: #c46602
+}
+
+.socialAssistiveText {
+	left: -32000px !important;
+	top: -32000px !important;
+	position: absolute !important
+}
+
+.socialBetaFlag {
+	padding-left: 4px;
+	position: relative;
+	bottom: 4px;
+	font-weight: bold;
+	font-size: .7em;
+	color: red;
+	display: inline-block
+}
+
+.socialAccFacebookStage {
+	padding: 0 !important;
+	width: 680px !important
+}
+
+.socialAccFacebookProfile {
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 10px 10px 0;
+	height: 560px
+}
+
+.socialAccFacebookStage .socialActionsBar {
+	margin: 10px 20px
+}
+
+.socialAccFacebookStage .socialProfileTopBlock {
+	width: 644px
+}
+
+.socialAccFacebookStage .socialProfileLeftTop {
+	width: 395px;
+	padding-left: 15px
+}
+
+.socialAccFacebookStage .socialProfileTopText {
+	margin-bottom: 4px
+}
+
+.socialAccFacebookCategory {
+	color: #959595;
+	clear: both
+}
+
+.socialAccFacebookLikesBox {
+	background-color: #fff;
+	width: 100px;
+	padding: 10px;
+	color: #707070;
+	text-align: center;
+	float: right !important
+}
+
+.socialAccFacebookLikeCount {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 2px
+}
+
+.socialAccFacebookStage .socialMainContent {
+	font-size: 98%;
+	line-height: 1.3;
+	width: 640px;
+	margin-top: 0
+}
+
+.socialAccFacebookStage .socialFacebookInfobox {
+	margin-top: 10px
+}
+
+.socialAccFacebookBasicInfoBox {
+	width: 632px
+}
+
+.socialAccFacebookMutualFriendsBox {
+	width: 202px;
+	color: #3c5998
+}
+
+.socialAccFacebookInfo {
+	padding: 4px 6px;
+	width: 620px
+}
+
+.socialAccFacebookInfoHeader {
+	color: #959595;
+	float: left;
+	width: 135px
+}
+
+.socialAccFacebookInfoText {
+	margin-left: 150px
+}
+
+.socialAccFacebookWallBox {
+	width: 632px
+}
+
+.socialAccFacebookWallPostList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+
+.socialAccFacebookWallPost {
+	padding: 10px 15px !important;
+	margin: 0 !important;
+	border-bottom: 1px solid #e9e9e9;
+	float: left
+}
+
+.socialAccFacebookWallPosterImg {
+	display: block;
+	float: left;
+	margin-right: 10px
+}
+
+.socialAccFacebookWallPosterImg img {
+	max-width: 50px
+}
+
+.socialAccFacebookWallPostContent {
+	float: left;
+	width: 510px
+}
+
+.socialAccFacebookWallPoster {
+	margin-bottom: 1px
+}
+
+.socialAccFacebookWallPoster a {
+	text-decoration: none;
+	font-weight: bold
+}
+
+.socialAccFacebookWallPostDetails {
+	margin: 10px 0 6px
+}
+
+.socialAccFacebookWallPostImg {
+	display: block;
+	float: left;
+	margin-right: 10px
+}
+
+.socialAccFacebookWallPostImg img {
+	max-width: 90px
+}
+
+.socialAccFacebookWallPostDetailsContent {
+	display: table-cell
+}
+
+.socialAccFacebookWallPostLink {
+	text-decoration: none;
+	font-weight: bold
+}
+
+.socialAccFacebookWallPostCaption {
+	color: #868686
+}
+
+.socialAccFacebookWallPostDesc {
+	color: #868686;
+	margin-top: 3px
+}
+
+.socialAccFacebookWallPostFooter {
+	color: #9b9b9b
+}
+
+.socialAccFacebookWallPostIcon {
+	margin-right: 3px
+}
+
+.socialAccFacebookWallPostAction {
+	text-decoration: none
+}
+
+.socialSubtabStage {
+	width: 660px !important
+}
+
+.socialSubtabBar {
+	border-bottom: 1px solid #ccc;
+	cursor: move;
+	float: left;
+	font-size: 13px;
+	padding: 0 20px;
+	width: 640px
+}
+
+.socialSubtabTop {
+	float: left;
+	margin-left: 10px;
+	border-bottom: 1px solid white;
+	margin-bottom: -1px
+}
+
+.socialSubtabLeft {
+	
+}
+
+.socialSubtabRight {
+	
+}
+
+a.socialSubtabText {
+	color: blue;
+	padding: 9px;
+	display: block;
+	height: 12px;
+	text-decoration: none
+}
+
+a.socialSubtabText:hover {
+	text-decoration: none
+}
+
+.socialSubtabTop.socialSubtabActive {
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc
+}
+
+.socialSubtabActive .socialSubtabText {
+	color: black !important
+}
+
+.socialYtPlayerContainer {
+	margin-left: 27px
+}
+
+.socialGoBackLinkBlock {
+	padding: 14px;
+	background-color: gray;
+	width: 600px;
+	background-color: #eef1f1;
+	margin: 10px 0
+}
+
+.socialGoBackLink {
+	text-decoration: none
+}
+
+.socialHopupVideoTitle {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 6px 0 0 0;
+	max-height: 43px;
+	overflow: hidden
+}
+
+.socialYtVideoAuthor {
+	text-decoration: none;
+	color: blue;
+	cursor: pointer
+}
+
+.socialYtSearchUpperBox {
+	background: #eef1f1 url("/img/social/yt_logo.png") no-repeat 17px 16px;
+	height: 63px;
+	width: 484px;
+	padding: 12px 0 0 160px
+}
+
+.socialYtSearchText {
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 5px
+}
+
+.socialYtSearchResults {
+	float: left;
+	font-size: 14px;
+	margin: 5px;
+	padding: 8px 10px;
+	width: 616px
+}
+
+.socialYtSearchResultImg {
+	border: 1px solid #d4dadc;
+	float: left;
+	cursor: pointer
+}
+
+.socialYtSearchResultImageContainer {
+	float: left;
+	border: 1px solid #d3d3d3;
+	padding: 4px;
+	position: relative;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	height: 90px;
+	width: 120px;
+	overflow: hidden
+}
+
+.socialYtResultsContainer {
+	border-bottom: 1px solid #c2c2c2
+}
+
+.socialYtSearchResult {
+	float: left;
+	width: 100%;
+	border-top: 1px solid #c2c2c2;
+	padding-top: 8px;
+	margin-bottom: 8px
+}
+
+.socialYtSearchResultTextContainer {
+	float: left;
+	height: 94px;
+	margin-left: 10px;
+	padding: 1px;
+	overflow: hidden;
+	width: 462px;
+	position: relative
+}
+
+.socialYtSearchDescription1 {
+	color: #444;
+	height: 58px;
+	margin: 5px 0;
+	overflow: hidden;
+	font-size: 12px
+}
+
+.socialYtSearchDescription2 {
+	color: #444;
+	height: 15px;
+	margin-bottom: 4px;
+	overflow: hidden
+}
+
+.socialYtSearchDescription3 {
+	color: #444;
+	height: 15px;
+	margin-bottom: 4px;
+	overflow: hidden
+}
+
+.socialYtSearchResults {
+	background-color: white !important
+}
+
+.socialYtDuration {
+	background-color: black;
+	color: white;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	opacity: .75;
+	filter: alpha(opacity = 75);
+	padding: 2px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px
+}
+
+.socialYtMoreResultsLink {
+	margin-top: 25px;
+	float: left
+}
+
+#socialYouTubeVideoDiv {
+	position: relative;
+	width: 630px;
+	height: 362px;
+	margin: 15px 0 0 25px
+}
+
+#socialYtPlayer {
+	margin-top: 10px
+}
+
+.socialInstallFlashText {
+	position: absolute;
+	top: 50%
+}
+
+.socialYtResultsSubtext {
+	color: #636363;
+	font-size: 11px
+}
+
+.socialYtSearchName {
+	color: #015ba7 !important;
+	text-decoration: none;
+	font-size: 14px
+}
+
+.socialYtAuthorLink {
+	color: #015ba7 !important;
+	text-decoration: none
+}
+
+.socialYtMetaInfo {
+	font-size: 11px;
+	position: absolute;
+	top: 82px;
+	left: 0;
+	background-color: white;
+	width: 100%
+}
+
+.socialYtSearchStage {
+	width: 680px !important
+}
+
+.socialKloutLeftTop {
+	width: 550px !important
+}
+
+.socialKloutLeftTop .socialProfileTopText {
+	margin-bottom: 2px
+}
+
+.socialKloutClass {
+	background-color: #01baff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: white;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 2px 5px;
+	text-transform: uppercase;
+	vertical-align: 2px;
+	margin-right: 7px
+}
+
+.socialKloutTopics {
+	clear: both
+}
+
+.socialKloutTopicsLabel {
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 3px;
+	margin-right: 4px;
+	float: left;
+	color: #636363
+}
+
+.socialKloutTopicsNames {
+	font-size: 14px;
+	display: table-cell;
+	color: #e44803;
+	width: 1000px
+}
+
+.socialKloutScoresBlock {
+	float: left;
+	width: 140px;
+	margin-right: 50px
+}
+
+.socialKloutScoreBox {
+	background-color: white;
+	padding: 0 10px;
+	position: relative;
+	margin-top: 20px
+}
+
+.socialKloutScore {
+	background: url("/img/social/klout/score_bubble_large.png") no-repeat
+		scroll left top transparent;
+	padding-top: 5px;
+	margin-top: 7px;
+	text-align: center;
+	position: relative;
+	font-weight: bold;
+	font-size: 75px;
+	width: 120px;
+	height: 109px;
+	color: white;
+	display: inline-block;
+	text-align: center
+}
+
+.socialKloutScoreIcon {
+	position: absolute;
+	left: -6px;
+	top: -8px
+}
+
+.socialKloutScoreLabel {
+	font-weight: bold;
+	font-size: 13px;
+	color: #555;
+	margin-right: 5px;
+	display: inline-block
+}
+
+.socialKloutMinorScoreRow {
+	margin-top: 5px;
+	padding: 2px 0 2px 2px
+}
+
+.socialKloutMinorScoreLabel {
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	vertical-align: top;
+	padding-top: 4px;
+	display: inline-block;
+	float: left
+}
+
+.socialKloutMinorScore {
+	background: url("/img/social/klout/score_bubble.png") no-repeat scroll
+		left top transparent;
+	width: 38px;
+	height: 26px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	display: inline-block;
+	padding-top: 4px;
+	margin-right: 6px;
+	vertical-align: top;
+	float: left
+}
+
+.socialKloutHelpImg {
+	cursor: pointer
+}
+
+.socialKloutHelp {
+	text-align: left
+}
+
+.socialKloutHelp .mouseOverInfo {
+	bottom: -5px !important;
+	width: 23em !important;
+	margin-left: 8px
+}
+
+.mouseOverInfoOuter.socialKloutHelp {
+	position: relative
+}
+
+.socialKloutMinorScoreRow .socialKloutHelp {
+	position: relative;
+	float: right;
+	vertical-align: top;
+	margin-top: 3px
+}
+
+.socialKloutInfluenceBlock {
+	width: 429px;
+	margin: 15px 5px 5px 12px;
+	float: left
+}
+
+.socialKloutInfluenceSection {
+	
+}
+
+.socialKloutInfluenceSectionHeader {
+	font-size: 15px;
+	border-bottom: 1px solid #c2c2c2;
+	padding: 6px 0 5px
+}
+
+.socialKloutInfluenceSectionHeader h2 {
+	font-weight: normal !important
+}
+
+.socialKloutInfluencer {
+	width: 80px;
+	text-align: center;
+	float: left;
+	margin: 10px 2px
+}
+
+.socialKloutInfluencerLink {
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #545454 !important
+}
+
+.socialKloutInfluencerPic {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 0 15px 4px
+}
+
+.socialKloutInfluencerName {
+	display: block;
+	font-size: 11px;
+	width: 80px;
+	overflow: hidden;
+	word-wrap: normal;
+	text-overflow: ellipsis
+}
+
+.socialKloutInfluencerScore {
+	background: url("/img/social/klout/influencer_score_bubble.png")
+		no-repeat scroll left top transparent;
+	padding-top: 6px;
+	margin-top: 3px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	width: 32px;
+	height: 32px;
+	color: white;
+	display: inline-block
+}
+
+.socialKloutSpashScreenMainContent {
+	padding: 40px;
+	margin-bottom: 50px;
+	text-align: center
+}
+
+.socialKloutSpashScreenPrimaryDesc {
+	color: #636363;
+	font-family: sans-serif, Helvetica, Arial;
+	font-size: 15px;
+	line-height: 1.4;
+	margin: 15px 5px
+}
+
+.socialKloutSpashScreenSecondaryDesc {
+	color: #636363;
+	font-family: sans-serif, Helvetica, Arial;
+	font-size: 11.5px;
+	line-height: 1.4;
+	margin: 0 25px 25px
+}
+
+.socialKloutSpashScreenStartUseButton {
+	font-family: sans-serif, Helvetica, Arial !important;
+	font-size: 14px !important;
+	background-image: none !important;
+	background-color: #e64f09 !important;
+	border-color: #f4ac47 !important;
+	border-radius: 9px !important;
+	-moz-border-radius: 9px !important;
+	-webkit-border-radius: 9px !important;
+	color: white !important;
+	padding: 8px 35px !important
+}
+
+.socialKloutSpashScreenStartUseButton:hover {
+	background-image: none !important;
+	background-color: #cd5012 !important;
+	border-color: #f4ac47 !important;
+	color: white !important
+}
+
+.socialKloutSpashScreenStartUseButton:active {
+	border-color: #585858 #585858 #939393 !important
+}
+
+.socialKloutSpashScreenLearnMore {
+	padding: 0 15px 10px;
+	color: #636363
+}
+
+.socialKloutSpashScreenLearnMoreLink {
+	text-decoration: none
+}
+
+.socialKloutNoTwitterProfileMainContent {
+	margin-top: 70px;
+	margin-bottom: 70px
+}
+
+.socialKloutNoTwitterProfileMessageBox {
+	padding: 20px;
+	text-align: center
+}
+
+.socialKloutAssociateTwitterButton {
+	padding: 7px 12px 6px !important;
+	margin-top: 10px !important
+}
+
+.socialKloutAssociateTwitterButtonIcon {
+	background: url("/img/social/twitter_bird_button_icon.png") no-repeat
+		scroll left top transparent;
+	width: 23px;
+	height: 18px;
+	vertical-align: middle;
+	display: inline-block
+}
+
+.socialKloutAssociateTwitterButtonContent {
+	padding-left: 2px;
+	padding-right: 6px
+}
+
+.socialKloutAssociateTwitterLogo {
+	margin: 0 2px
+}
+
+.fancy-bg {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 20px;
+	height: 20px;
+	z-index: -1
+}
+
+.fancy-bg.n {
+	top: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('/img/social/fancybox/fancybox-x.png')
+}
+
+.fancy-bg.ne {
+	top: -20px;
+	right: -20px;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -162px
+}
+
+.fancy-bg.ne-inner {
+	top: 0;
+	right: 0;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -142px
+}
+
+.fancy-bg.e {
+	top: 0;
+	right: -20px;
+	height: 100%;
+	background-image: url('/img/social/fancybox/fancybox-y.png');
+	background-position: -20px 0
+}
+
+.fancy-bg.se {
+	bottom: -20px;
+	right: -20px;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -182px
+}
+
+.fancy-bg.se-inner {
+	bottom: 0;
+	right: 0;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -122px
+}
+
+.fancy-bg.s {
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('/img/social/fancybox/fancybox-x.png');
+	background-position: 0 -20px
+}
+
+.fancy-bg.sw {
+	bottom: -20px;
+	left: -20px;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -142px
+}
+
+.fancy-bg.sw-inner {
+	bottom: 0;
+	left: 0;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -162px
+}
+
+.fancy-bg.w {
+	top: 0;
+	left: -20px;
+	height: 100%;
+	background-image: url('/img/social/fancybox/fancybox-y.png')
+}
+
+.fancy-bg.nw {
+	top: -20px;
+	left: -20px;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -122px
+}
+
+.fancy-bg.nw-inner {
+	top: 0;
+	left: 0;
+	background-image: url('/img/social/fancybox/fancybox.png');
+	background-position: -40px -182px
+}

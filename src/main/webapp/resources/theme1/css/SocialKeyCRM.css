@@ -1,0 +1,32 @@
+/*
+ * This code is for Internal Salesforce use only, and subject to change without notice.
+ * Customers shouldn't reference this file in any web pages.
+ */
+@CHARSET "UTF-8";
+
+#contactHeaderRow .socialRow .IndividualsocialIcons {
+	background-image: url("/img/dataDotCom/socialkey/social_sprite.png?v=2");
+	height: 20px;
+	width: 20px;
+	margin-right: 2px
+}
+
+#contactHeaderRow .socialRow .linkedinIcon {
+	background-position: 20px -100px
+}
+
+#contactHeaderRow .socialRow .twitterIcon {
+	background-position: 20px -120px
+}
+
+#contactHeaderRow .socialRow .facebookIcon {
+	background-position: 20px -140px
+}
+
+#contactHeaderRow .socialRow .kloutIcon {
+	background-position: 20px -160px
+}
+
+#contactHeaderRow .socialRow .youtubeIcon {
+	background-position: 20px -180px
+}

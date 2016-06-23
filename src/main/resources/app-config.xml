@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/jdbc 
+        http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+	<context:component-scan base-package="com.exams.*" />
+	<mvc:annotation-driven />
+	<context:property-placeholder location="classpath:application.properties" />
+
+
+	<bean id="methodValidationPostProcessor"
+		class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor"></bean>
+
+
+	<bean id="jdbcTemplateHeroku" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg ref="dataSource" />
+	</bean>
+
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<!-- Mapping Static Resources -->
+	<mvc:resources mapping="/css/**" location="/resources/css/"
+		cache-period="31556926" />
+	<mvc:resources mapping="/js/**" location="/resources/js/"
+		cache-period="31556926" />
+	<mvc:resources mapping="/images/**" location="/resources/images/"
+		cache-period="31556926" />
+	<mvc:resources mapping="/resources/**" location="/resources/theme1/"
+		cache-period="31556926" />
+
+
+
+	<!-- <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"> 
+		<property name="dataSource" ref="dataSource" /> </bean> <tx:annotation-driven 
+		transaction-manager="transactionManager" /> -->
+
+	<!-- time out -->
+	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
+		<constructor-arg>
+			<bean
+				class="org.springframework.http.client.HttpComponentsClientHttpRequestFactory">
+				<property name="readTimeout" value="120000" />
+				<property name="connectTimeout" value="120000" />
+			</bean>
+		</constructor-arg>
+	</bean>
+
+
+
+
+
+
+	<!-- DB props -->
+
+	<beans profile="heroku">
+		<bean class="java.net.URI" id="dbUrl">
+			<constructor-arg value="#{systemEnvironment['DATABASE_URL']}" />
+		</bean>
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+			<property name="url"
+				value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + 
+				':' + @dbUrl.getPort() + @dbUrl.getPath() }" />
+			<property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }" />
+			<property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }" />
+		</bean>
+	</beans>
+
+
+	<!-- DB props -->
+
+	<beans profile="!heroku">
+
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+			<property name="driverClassName">
+				<value>org.postgresql.Driver</value>
+			</property>
+			<property name="url">
+				<value>jdbc:postgresql://localhost:5432/Exams</value>
+			</property>
+			<property name="username">
+				<value>postgres</value>
+			</property>
+			<property name="password">
+				<value>root123</value>
+			</property>
+		</bean>
+
+	</beans>
+
+
+</beans>

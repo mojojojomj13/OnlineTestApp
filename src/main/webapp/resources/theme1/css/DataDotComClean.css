@@ -1,0 +1,975 @@
+/*
+ * This code is for Internal Salesforce use only, and subject to change without notice.
+ * Customers shouldn't reference this file in any web pages.
+ */
+#DataDotComCleanStatus_ilecell {
+	padding-top: 2px;
+	padding-bottom: 1px
+}
+
+.dataDotComCleanStatus {
+	line-height: 17px
+}
+
+.dataDotComCleanStatusIcon {
+	background: url('/img/dataDotCom/clean/status_icons_sprite.png');
+	background-color: #fff;
+	border: 1px solid #fff;
+	vertical-align: middle;
+	margin-top: -1px
+}
+
+a:hover .dataDotComCleanStatusIcon {
+	background-color: #eff3ff;
+	border: 1px solid #9cf;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px
+}
+
+.dataCol .dataDotComCleanStatusLink .dataDotComCleanStatusIconSelected,
+	a:hover .dataDotComCleanStatusIconSelected {
+	background-color: #c6e1ff;
+	border: 1px solid #9cf;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px
+}
+
+.dataDotComCleanStatusIconDisabled, a:hover .dataDotComCleanStatusIconDisabled
+	{
+	background-color: #fff;
+	border: 1px solid #fff;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	cursor: default
+}
+
+.dataDotComCleanStatusIcon0, .dataDotComCleanStatusIcon2 {
+	background-position: 0 -40px
+}
+
+.dataDotComCleanStatusIcon1, .dataDotComCleanStatusIcon5,
+	.dataDotComCleanStatusIcon6 {
+	background-position: 0 0
+}
+
+.dataDotComCleanStatusIcon3, .dataDotComCleanStatusIcon4 {
+	background-position: 0 -21px
+}
+
+.cleanStatusOnRefresh {
+	background-color: #ffffdc
+}
+
+.dataDotComCleanstatusText {
+	vertical-align: middle
+}
+
+.dataDotComCleanDate {
+	color: #7d7d84;
+	font-size: .92em;
+	margin-left: 5px;
+	vertical-align: middle;
+	padding-top: 1px
+}
+
+.dataDotComCallout {
+	max-width: 260px;
+	position: absolute;
+	z-index: 9999
+}
+
+.dataDotComCallout .inner {
+	border: 1px solid #c1c1c1;
+	background-color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 2px 5px #a0a6ab;
+	-webkit-box-shadow: 0 2px 5px #a0a6ab;
+	box-shadow: 0 2px 5px #a0a6ab;
+	padding: 5px
+}
+
+.dataDotComCallout .body {
+	padding: 5px;
+	min-width: 200px
+}
+
+.dataDotComCallout .arrow {
+	background-image: url("/img/sprites/callout_arrows.png");
+	width: 25px;
+	height: 16px;
+	background-position: 1px -60px;
+	margin: -3px 0 0 15px
+}
+
+.dataDotComCallout .close {
+	float: right;
+	padding: 0 0 5px 5px
+}
+
+.dataDotComCallout .close img {
+	background: url('/img/sprites/dropdownx.png');
+	cursor: pointer
+}
+
+.dataDotComCallout .close a:hover img {
+	background-position: 0 -16px
+}
+
+.dataDotComCallout .fields {
+	margin-top: 5px;
+	font-weight: bold;
+	padding: 3px 0 3px 0;
+	word-wrap: break-word
+}
+
+.dataDotComCallout .inaccessibleFieldsMsg {
+	margin-top: 5px
+}
+
+.dataDotComCallout .dateInfo {
+	color: #7d7d84;
+	font-size: .92em;
+	margin-bottom: 4px
+}
+
+.dataDotComCallout .links {
+	padding-top: 10px
+}
+
+.dataDotComCallout .actionLink {
+	color: #015ba7;
+	text-decoration: none
+}
+
+.dataDotComCallout a.actionLink:hover {
+	text-decoration: underline
+}
+
+.innerContent #StareAndCompareDialogContent, #StareAndCompareDialog #StareAndCompareDialogContent,
+	.innerContent #SelectMatchDialogContent, #SelectMatchDialog #SelectMatchDialogContent
+	{
+	padding: 5px 0 !important
+}
+
+.stareAndCompareOverlay .body {
+	max-height: 300px;
+	overflow-x: visible;
+	overflow-y: scroll;
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+	min-height: 100px
+}
+
+#StareAndCompareDialog .clearfix:after, #SelectMatchDialog .clearfix:after
+	{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+.stareAndCompareOverlay .wordWrap, .selectMatchOverlay .wordWrap {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word
+}
+
+.stareAndCompareOverlay .clearfix {
+	display: inline-table
+}
+
+* .stareAndCompareOverlay .clearfix {
+	height: 1%
+}
+
+.stareAndCompareOverlay .clearfix {
+	display: block
+}
+
+.stareAndCompareOverlay .message {
+	margin-top: 6px;
+	margin-right: 38px;
+	margin-left: 10px;
+	margin-bottom: 10px
+}
+
+.stareAndCompareOverlay .helpLink {
+	float: right;
+	text-decoration: none;
+	position: relative;
+	margin-right: 12px
+}
+
+.stareAndCompareOverlay .helpLink .helpIcon, .selectMatchOverlay .helpLink .helpIcon
+	{
+	vertical-align: middle;
+	margin-left: 5px;
+	background: url("/img/alohaSkin/help_orange.png") no-repeat scroll 0 0
+		transparent
+}
+
+#StareAndCompareDialog .icon, .selectMatchOverlay .icon {
+	height: 32px;
+	width: 32px;
+	vertical-align: middle;
+	display: inline;
+	margin-right: 8px
+}
+
+.stareAndCompareOverlay .header {
+	padding-bottom: 20px
+}
+
+.stareAndCompareOverlay .headerTitle {
+	font-size: 1.2em
+}
+
+.stareAndCompareOverlay .headerTable {
+	width: 100%
+}
+
+.stareAndCompareOverlay .headerTable .headerCell {
+	vertical-align: top;
+	width: 310px
+}
+
+.stareAndCompareOverlay .sfdcHeader {
+	margin-left: 98px
+}
+
+#StareAndCompareDialog .sfdcHeader .icon, #SelectMatchDialog .sfdcHeader .icon
+	{
+	background-image: url("/img/sprites/master.png");
+	background-position: 0 -950px
+}
+
+.stareAndCompareOverlay .dataDotComHeader, .selectMatchOverlay .dataDotComHeader
+	{
+	margin-left: 15px;
+	position: relative
+}
+
+#StareAndCompareDialog .dataDotComHeader .icon, #SelectMatchDialog .dataDotComHeader .icon
+	{
+	background-image: url("/img/icon/datadotcom32.png");
+	background-position: 0
+}
+
+.stareAndCompareOverlay .dataDotComHeader .links {
+	font-weight: normal;
+	color: #015ba7;
+	margin-left: 38px;
+	font-size: .92em;
+	overflow: hidden;
+	width: 225px;
+	white-space: normal
+}
+
+.stareAndCompareOverlay .dataDotComHeader .actionLink,
+	.selectMatchOverlay .selectMatchDialogBody .actionLink,
+	#StareAndCompareDialog .dataTable .dataDotComColumn .reportBadDataContainer .reportDataLink
+	{
+	margin: 2px;
+	vertical-align: middle;
+	color: #015ba7;
+	text-decoration: none;
+	white-space: nowrap;
+	max-width: 200px;
+	overflow: hidden
+}
+
+.stareAndCompareOverlay .dataDotComHeader .inactiveLinksContainer {
+	font-size: .92em;
+	overflow: hidden;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	font-weight: normal
+}
+
+.stareAndCompareOverlay .dataDotComHeader a.actionLink:hover,
+	#StareAndCompareDialog .dataTable .dataDotComColumn .reportBadDataContainer a.reportDataLink:hover,
+	.selectMatchOverlay .selectMatchDialogBody a.actionLink:hover {
+	text-decoration: underline
+}
+
+.stareAndCompareOverlay .dataTable {
+	width: 640px;
+	border-spacing: 0;
+	margin: 0 auto
+}
+
+.stareAndCompareOverlay .dataTable th, .stareAndCompareOverlay .dataTable td
+	{
+	padding: 5px 10px;
+	vertical-align: top;
+	white-space: normal;
+	border-top: 1px solid #ececec
+}
+
+.stareAndCompareOverlay .dataTable tbody tr:first-child th,
+	.stareAndCompareOverlay .dataTable tbody tr:first-child td {
+	border-top: 0 none
+}
+
+.stareAndCompareOverlay .dataTable th {
+	overflow: hidden
+}
+
+#StareAndCompareDialog .dataTable thead tr, #SelectMatchDialog .dataTable thead tr
+	{
+	position: absolute;
+	left: -3000px
+}
+
+.stareAndCompareOverlay .dataTable .labelColumn {
+	width: 100px;
+	max-width: 100px;
+	font-size: .9em;
+	font-weight: bold;
+	color: #4a4a56;
+	text-align: right;
+	padding-top: 6px
+}
+
+.stareAndCompareOverlay .dataTable .labelColumn .labelContainer,
+	.selectMatchOverlay .dataTable .labelColumn .labelContainer {
+	width: 95px;
+	overflow: hidden
+}
+
+.stareAndCompareOverlay .dataTable .sfdcColumn {
+	width: 230px
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn {
+	width: 275px;
+	position: relative
+}
+
+#StareAndCompareDialog .dataTable .sfdcColumn, #StareAndCompareDialog .dataTable .sfdcColumn a,
+	#StareAndCompareDialog .dataTable .matchedRow .dataDotComColumn,
+	#StareAndCompareDialog .dataTable .matchedRow .dataDotComColumn a {
+	color: #7d7d84
+}
+
+.stareAndCompareOverlay .dataTable .differentRow .dataDotComColumn,
+	.stareAndCompareOverlay .dataTable .readOnlyRow .dataDotComColumn,
+	.stareAndCompareOverlay .dataTable .differentRow .dataDotComColumn a,
+	.stareAndCompareOverlay .dataTable .readOnlyRow .dataDotComColumn a {
+	color: #222
+}
+
+.stareAndCompareOverlay .dataTable .readOnlyRow .sfdcColumn,
+	.stareAndCompareOverlay .dataTable .differentRow.boldSelected .sfdcColumn,
+	.stareAndCompareOverlay .dataTable .differentRow.selected.boldSelected .dataDotComColumn
+	{
+	font-weight: bold
+}
+
+.stareAndCompareOverlay .dataTable .differentRow.selected .sfdcColumn {
+	font-weight: normal
+}
+
+.stareAndCompareOverlay .dataTable .differentRow .dataDotComColumn.over,
+	.stareAndCompareOverlay .dataTable .dataDotComColumn.reportBadOpened {
+	background-color: #e3f3ff
+}
+
+.stareAndCompareOverlay .dataTable .differentRow .dataDotComColumn,
+	.stareAndCompareOverlay .dataTable .differentRow .differentCheckbox {
+	cursor: pointer
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn .data,
+	.stareAndCompareOverlay .dataTable .dataDotComColumn .infoIcon,
+	.stareAndCompareOverlay .dataTable .dataDotComColumn .iconContainer {
+	float: left
+}
+
+.stareAndCompareOverlay .dataTable .dataColumn .data {
+	width: 185px;
+	overflow: hidden
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn .iconContainer {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	vertical-align: middle
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn .iconContainer .differentCheckbox
+	{
+	margin: 1px 0;
+	padding-left: 0;
+	width: 12px;
+	height: 12px
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn .iconContainer .checkImg
+	{
+	margin: 2px 1px
+}
+
+.stareAndCompareOverlay .dataTable .readOnlyRow .dataDotComColumn .data
+	{
+	margin-right: 5px;
+	margin-left: 20px
+}
+
+.stareAndCompareOverlay .message, .dataDotComCallout .message {
+	background-color: #f5fcff;
+	border-color: #bee6ff
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn .reportBadDataButtonContainer
+	{
+	float: right
+}
+
+.stareAndCompareOverlay .dataTable .reportBadDataButtonContainer .badDataButtonIcon
+	{
+	background: url('/img/dataDotCom/clean/carets_sprite.png');
+	width: 12px;
+	height: 8px;
+	margin-top: 5px
+}
+
+.stareAndCompareOverlay .dataTable .reportBadDataButtonContainer .badDataButtonIcon.open
+	{
+	background-position: 0 0
+}
+
+.stareAndCompareOverlay .dataTable a.reportBadDataButton.open:hover .badDataButtonIcon
+	{
+	background-position: 0 -18px
+}
+
+.stareAndCompareOverlay .dataTable a.reportBadDataButton.close .badDataButtonIcon
+	{
+	background-position: 0 -27px
+}
+
+.stareAndCompareOverlay .dataTable a.reportBadDataButton.close:hover .badDataButtonIcon
+	{
+	background-position: 0 -45px
+}
+
+.stareAndCompareOverlay .dataTable .reportBadDataContainer {
+	border: 1px solid #ececec;
+	border-top: 0 none;
+	position: absolute;
+	bottom: -32px;
+	left: 0;
+	background: #fff;
+	z-index: 999;
+	padding: 5px;
+	padding-left: 10px;
+	width: 283px;
+	box-shadow: 0 2px 6px #ddd;
+	height: 20px;
+	font-weight: normal
+}
+
+.stareAndCompareOverlay .dataTable .reportBadDataContainer.reportBadDataContainerWithUserInfo
+	{
+	height: 50px;
+	bottom: -62px
+}
+
+.stareAndCompareOverlay .dataTable .hidden {
+	display: none
+}
+
+.stareAndCompareOverlay .badDataIcon {
+	margin-right: 5px;
+	margin-top: 2px;
+	display: block;
+	float: left
+}
+
+.stareAndCompareOverlay .dataTable .badDataIcon {
+	background: url('/img/dataDotCom/clean/snc_flag.png');
+	margin-top: 1px;
+	width: 16px;
+	height: 14px
+}
+
+#StareAndCompareDialog .dataTable .dataDotComColumn .reportBadDataContainer .reportDataLinkContainer
+	{
+	margin-top: 3px;
+	float: left;
+	width: 250px
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn .reportBadDataContainer .badDataInfo
+	{
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-top: 0
+}
+
+.stareAndCompareOverlay .dataTable .dataDotComColumn .reportBadDataContainer .badDataUserInfo
+	{
+	font-weight: bold
+}
+
+#StareAndCompareMessageDialogContent>table {
+	width: 100%
+}
+
+#StareAndCompareMessageDialog #StareAndCompareMessageDialogContent .message
+	{
+	margin: 5px 15px 10px 15px;
+	text-align: left
+}
+
+#StareAndCompareMessageDialog #StareAndCompareMessageDialogContent {
+	text-align: center
+}
+
+#StareAndCompareMessageDialog .message.errorM2 {
+	background-color: #fdedea;
+	border-color: #f2a199
+}
+
+#StareAndCompareMessageDialog .message.warningM2 {
+	background-color: #ffffdc;
+	border-color: #f8e38e
+}
+
+#StareAndCompareMessageDialog .message.confirmM2 {
+	background-color: #edfff1;
+	border-color: #9bebb3
+}
+
+#StareAndCompareMessageDialog .messageTable td:first-child {
+	vertical-align: top
+}
+
+#StareAndCompareMessageDialog .saveErrorMessage {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-weight: bold
+}
+
+.overlayDialog .innerContent .stareAndCompareOverlay .buttons {
+	padding: 20px 0 20px 0
+}
+
+.selectMatchOverlay {
+	margin: 0 15px 5px 15px;
+	position: relative
+}
+
+.selectMatchOverlay .helpLink {
+	text-decoration: none;
+	position: absolute;
+	right: 5px;
+	top: 0
+}
+
+.selectMatchOverlay .videoLink {
+	text-decoration: none;
+	color: #0959a6;
+	position: absolute;
+	right: 50px;
+	top: 0
+}
+
+.selectMatchOverlay .boldFont {
+	font-weight: bold
+}
+
+.selectMatchOverlay .list {
+	margin: 0
+}
+
+.selectMatchOverlay .header {
+	margin-top: 5px;
+	margin-left: 0;
+	margin-bottom: 15px;
+	margin-right: 150px
+}
+
+.selectMatchOverlay .header .headerText {
+	font-size: 1.1em
+}
+
+.selectMatchOverlay .selectMatchDialogBody {
+	list-style-type: none;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	margin: 0;
+	padding: 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list {
+	float: left
+}
+
+.selectMatchOverlay .selectMatchDialogBody .dataTableContainer {
+	width: 490px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .dataTableContainer table {
+	width: 100%;
+	padding-right: 15px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateListContainer {
+	width: 208px;
+	background-color: #f5f5f5;
+	border-left: 1px solid #e5e5e5;
+	height: 100%
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .tableCell {
+	border-bottom: none;
+	width: 175px;
+	margin: 0;
+	padding: 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .tableHeaderCell {
+	width: 98px;
+	padding: 7px 15px 7px 0;
+	border-bottom: none;
+	font-size: .9em;
+	font-weight: bold;
+	color: #4a4a56;
+	text-align: right
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .dataDotComHeader,
+	.selectMatchOverlay .selectMatchDialogBody .list .sfdcHeader {
+	margin: 10px 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .dataTable td, tr {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 8px 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .dataTable .lastRow td,
+	tr {
+	border-bottom: none
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .dataTable .dataRow {
+	vertical-align: top
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .dataTable .sfdcColumn,
+	.selectMatchOverlay .selectMatchDialogBody .list .dataTable .sfdcColumn a,
+	.selectMatchOverlay .selectMatchDialogBody .list .dataTable .dataDotComColumn,
+	.selectMatchOverlay .selectMatchDialogBody .list .dataTable .dataDotComColumn a
+	{
+	color: #999
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .dataTable .sfdcColumn .data.different,
+	.selectMatchOverlay .selectMatchDialogBody .list .dataTable .sfdcColumn .data.different a,
+	.selectMatchOverlay .selectMatchDialogBody .list .dataTable .dataDotComColumn .data.highlight
+	{
+	color: #333;
+	font-weight: bold
+}
+
+.selectMatchOverlay .selectMatchDialogBody .list .dataTable .dataDotComDataContainer .data.different,
+	.selectMatchOverlay .selectMatchDialogBody .list .dataTable .dataDotComDataContainer .data.different a
+	{
+	color: #333
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate {
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 9px;
+	width: 199px;
+	margin: 0;
+	border-bottom: 1px solid #e5e5e5;
+	cursor: pointer;
+	position: relative
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .radioContainer
+	{
+	width: 30px;
+	float: left
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo
+	{
+	width: 150px;
+	float: left
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo .confidenceBar
+	{
+	width: 52px;
+	height: 8px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo .confidenceCode5
+	{
+	background: url('/img/dataDotCom/clean/confidence_code_bar_05.png')
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo .confidenceCode6
+	{
+	background: url('/img/dataDotCom/clean/confidence_code_bar_06.png')
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo .confidenceCode7
+	{
+	background: url('/img/dataDotCom/clean/confidence_code_bar_07.png')
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo .confidenceCode8
+	{
+	background: url('/img/dataDotCom/clean/confidence_code_bar_08.png')
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo .confidenceCode9
+	{
+	background: url('/img/dataDotCom/clean/confidence_code_bar_09.png')
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .candiateInfo .confidenceCode10
+	{
+	background: url('/img/dataDotCom/clean/confidence_code_bar_10.png')
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .companyName
+	{
+	font-weight: bold;
+	color: #0959a6;
+	font-size: 1em
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .address
+	{
+	color: #0959a6;
+	size: 1em;
+	margin-bottom: 5px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate.selected
+	{
+	background-color: #fff;
+	border-left: none;
+	border-left: 1px solid #fff;
+	left: -1px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate.selected .companyName
+	{
+	color: #333
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate.selected .address
+	{
+	color: #333
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .oneCandidateContainer
+	{
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+	height: 220px;
+	position: relative;
+	padding: 90px 10px 0;
+	margin: 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .oneCandidateContainer .oneCandidate
+	{
+	font-size: 1.1em;
+	line-height: 1.4
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfoOuter
+	{
+	left: 10px;
+	top: 53px;
+	position: absolute;
+	z-index: 9999;
+	display: block;
+	cursor: auto
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfoOuter.hidden,
+	.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeInfoList .matchGradeInfo.hidden
+	{
+	display: none
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .topHiddenDiv
+	{
+	height: 15px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchInfoArrow
+	{
+	height: 9px;
+	width: 16px;
+	background: url('/img/dataDotCom/clean/arrow_up.png') no-repeat;
+	position: absolute;
+	left: 45px;
+	top: 7px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo
+	{
+	width: 175px;
+	background-color: #ffffdc;
+	border: 1px solid #996;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 8px;
+	color: #666;
+	overflow: visible
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .dnbImage,
+	.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .labelContainer
+	{
+	float: left
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .dnbImage .icon
+	{
+	background-image: url("/img/icon/dandB_24.png");
+	height: 24px;
+	width: 24px;
+	margin-right: 8px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .dnbLog
+	{
+	margin-bottom: 8px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .dnbLogo .headerText
+	{
+	color: #333;
+	margin: 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .headerText
+	{
+	display: block;
+	font-size: 1em;
+	margin: 3px 0;
+	font-weight: bold
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList,
+	.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeInfoList
+	{
+	list-style-type: none;
+	padding: 0;
+	margin: 5px 0 0 0;
+	min-height: 31px
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList .matchGradeListItem
+	{
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList a.matchGradeItem
+	{
+	height: 24px;
+	width: 24px;
+	background-color: #267dbb;
+	color: #fff;
+	vertical-align: middle;
+	display: block;
+	border-left: 1px solid #1468ae;
+	cursor: pointer;
+	text-decoration: none
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList a.matchGradeItem.unavailableMatchGradeItem
+	{
+	background-color: #999
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList .matchGradeListItem
+	{
+	float: left
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList a.matchGradeItem:hover
+	{
+	background-color: #4ea7dc
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList a.matchGradeItem.unavailableMatchGradeItem:hover
+	{
+	background-color: #b5b5b5
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList .matchGradeListItem:first-child .matchGradeItem
+	{
+	border-left: none
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeList .matchGradeItem .centerText
+	{
+	padding-left: 7px;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+	line-height: 1.8
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .moreInfoContainer
+	{
+	position: absolute;
+	right: 8px;
+	bottom: 10px
+}
+
+.selectMatchOverlay .candidate .matchInfo .moreInfoContainer .actionLink
+	{
+	max-width: 55px;
+	word-wrap: break-word;
+	display: block
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeInfoList .matchGradeInfo
+	{
+	margin: 0
+}
+
+.selectMatchOverlay .selectMatchDialogBody .candidateList .candidate .matchInfo .matchGradeInfoList .matchGradeInfo .letterInfo
+	{
+	margin-top: 3px;
+	margin-bottom: 0;
+	margin-right: 55px;
+	word-wrap: break-word
+}
