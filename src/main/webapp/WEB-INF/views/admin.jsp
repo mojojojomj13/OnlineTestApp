@@ -412,8 +412,8 @@ textarea {
 
 
 							</table>
-							<input type="submit" class="btn btn-primary btn-lg btn-block loginBtn" value="create Question" name="action" /> <input
-								type="submit" value="update Question" name="action" class="btn btn-primary btn-lg btn-block loginBtn" />
+							<input type="submit" class="btn btn-primary loginBtn" value="create Question" name="action" /> <input
+								type="submit" value="update Question" width="50px" name="action" class="btn btn-primary loginBtn" />
 						</form>
 					</fieldset>
 
