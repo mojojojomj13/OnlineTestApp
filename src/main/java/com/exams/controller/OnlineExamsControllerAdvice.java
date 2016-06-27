@@ -5,10 +5,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.web.bind.MissingServletRequestParameterException;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.exams.constants.CommonConstants;
+import com.exams.constants.RequestMappingConstants;
 import com.exams.exceptions.InvalidRequestException;
 import com.exams.exceptions.ServiceException;
 import com.exams.vo.ResponseVOBuilder;
@@ -27,8 +30,7 @@ public class OnlineExamsControllerAdvice {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(OnlineExamsControllerAdvice.class);
 
-	@ExceptionHandler({ HttpMessageNotReadableException.class, MissingServletRequestParameterException.class,
-			InvalidRequestException.class })
+	@ExceptionHandler({ HttpMessageNotReadableException.class, InvalidRequestException.class })
 	public ResponseEntity<OnlineExamResponseVO> handleInternalUnreadableMessageError(Exception ex) {
 		LOGGER.error("Error in the reading http message,  " + HttpStatus.BAD_REQUEST.value() + " :: " + ex);
 		return new ResponseEntity<OnlineExamResponseVO>(new ResponseVOBuilder().code(HttpStatus.BAD_REQUEST.value())
@@ -45,12 +47,15 @@ public class OnlineExamsControllerAdvice {
 	 * @return the response wrapped in a {@link ResponseEntity} sent back to the
 	 *         caller
 	 */
-	@ExceptionHandler({ Exception.class, RuntimeException.class })
-	public ResponseEntity<String> handleInternalServerError(Exception ex) {
-		if (null != ex)
-			ex.printStackTrace();
-		LOGGER.error("Error in the Server App, 500 " + ex.getMessage());
-		return new ResponseEntity<String>("Some error in the Server ," + ex.getMessage(),
-				HttpStatus.INTERNAL_SERVER_ERROR);
+	@ExceptionHandler({ Exception.class, RuntimeException.class, HttpRequestMethodNotSupportedException.class })
+	public ModelAndView handleInternalServerError(Exception ex) {
+		ModelAndView model = new ModelAndView();
+		ex.printStackTrace();
+		if (ex != null) {
+			model.addObject(CommonConstants.MODEL_ATTR_MSG, "Server Error  :: " + ex.toString());
+			model.addObject(CommonConstants.MODEL_ATTR_ERR, "true");
+		}
+		model.setViewName(RequestMappingConstants.ADMIN_VIEW);
+		return model;
 	}
 }

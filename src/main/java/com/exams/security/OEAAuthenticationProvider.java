@@ -39,8 +39,10 @@ public class OEAAuthenticationProvider implements AuthenticationProvider {
 		final String loginPassword = (String) authentication.getCredentials();
 		User user = null;
 		try {
-			String hashedPwd = SHA256HashingHelper.hashMessage(loginUsername.toLowerCase().trim(), loginPassword);
-			user = securityDAO.getUser(loginUsername, hashedPwd);
+			if (loginUsername != null && loginPassword != null) {
+				String hashedPwd = SHA256HashingHelper.hashMessage(loginUsername.toLowerCase().trim(), loginPassword);
+				user = securityDAO.getUser(loginUsername, hashedPwd);
+			}
 			if (user == null) {
 				throw new BadCredentialsException("Invalid username or password");
 			}
@@ -49,7 +51,7 @@ public class OEAAuthenticationProvider implements AuthenticationProvider {
 				LOGGER.info("User ::{}", new Object[] { user });
 		} catch (ServiceException | DatabaseException e) {
 			LOGGER.info("Some error while getting User(Security) :: " + e);
-			throw new BadCredentialsException("Invalid username or password");
+			throw new BadCredentialsException("Invalid username , password");
 		}
 		return new UsernamePasswordAuthenticationToken(user, loginPassword, user.getAuthorities());
 	}

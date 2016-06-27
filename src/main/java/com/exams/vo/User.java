@@ -7,6 +7,8 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.exams.form.QuestionForm;
+
 public class User implements UserDetails {
 
 	/**
@@ -25,6 +27,16 @@ public class User implements UserDetails {
 	private String middleName;
 
 	private String lastName;
+
+	private QuestionForm quesForm;
+
+	public QuestionForm getQuesForm() {
+		return quesForm;
+	}
+
+	public void setQuesForm(QuestionForm quesForm) {
+		this.quesForm = quesForm;
+	}
 
 	public String getFirstName() {
 		return firstName;
@@ -159,6 +171,28 @@ public class User implements UserDetails {
 		this.password = password;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (userName == null ? 0 : userName.toLowerCase().hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (!this.userName.equalsIgnoreCase(other.userName))
+			return false;
+		return true;
+	}
+
 	/**
 	 * @param isEnabled
 	 *            the isEnabled to set
@@ -177,7 +211,7 @@ public class User implements UserDetails {
 
 	@Override
 	public String toString() {
-		return this.userName + ":" + this.isEnabled + ":"
-				+ (null != this.authorities ? this.authorities.toString() : "");
+		return "User [userName=" + userName + ", isEnabled=" + isEnabled + ", firstName=" + firstName + ", middleName="
+				+ middleName + ", lastName=" + lastName + ", authorities=" + authorities + "]";
 	}
 }

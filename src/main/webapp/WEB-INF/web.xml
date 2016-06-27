@@ -10,7 +10,7 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
-
+      
 
 
 
@@ -28,8 +28,14 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
-
+	<!-- Will give you sessionRegistry to track users -->
+   <listener>
+     <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+   </listener>
+     
+     <session-config>
+      <session-timeout>5</session-timeout>
+     </session-config>
 
 	<!-- Spring Security -->
 	<filter>

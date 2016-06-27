@@ -2,10 +2,8 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:tx="http://www.springframework.org/schema/tx"
-	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans     
         http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -21,13 +19,30 @@
 	<context:component-scan base-package="com.exams.*" />
 	<mvc:annotation-driven />
 	<context:property-placeholder location="classpath:application.properties" />
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+	</bean>
+	
+	<mvc:interceptors>
+    <mvc:interceptor>
+      <mvc:mapping path="/**"></mvc:mapping>
+      <bean class="org.springframework.web.servlet.mvc.WebContentInterceptor">
+       <property name="cacheSeconds" value="0"></property>
+      <property name="useCacheControlHeader" value="true"></property>
+      <property name="useExpiresHeader" value="true"></property>
+      <property name="useCacheControlNoStore" value="true"></property>
+      
+      </bean>
+    </mvc:interceptor>	
+    </mvc:interceptors>
 
 
 	<bean id="methodValidationPostProcessor"
 		class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor"></bean>
 
 
-	<bean id="jdbcTemplateHeroku" class="org.springframework.jdbc.core.JdbcTemplate">
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<constructor-arg ref="dataSource" />
 	</bean>
 
@@ -73,7 +88,6 @@
 
 
 
-
 	<!-- DB props -->
 
 	<beans profile="heroku">
@@ -107,9 +121,14 @@
 			<property name="password">
 				<value>root123</value>
 			</property>
+			<property name="accessToUnderlyingConnectionAllowed">
+				<value>true</value>
+			</property>
 		</bean>
 
 	</beans>
+
+
 
 
 </beans>
