@@ -266,24 +266,7 @@ textarea {
 									name="${_csrf.parameterName}" /><input type="hidden"
 									name="tabName" value="tab2-content" />
 
-								<table class="tab2 table">
-									<tr>
-										<th>User Name</th>
-										<th>Endpoint Url</th>
-										<th width="10%">Authorized</th>
-									</tr>
-
-									
-									<tr>
-
-										<!--############ Spring security required for POST a form data ################-->
-										<th colspan="3"
-											style="text-align: center; border-radius: 10px;"><input
-											class="btn btn-primary btn-lg btn-block loginBtn"
-											type="submit" value="Submit"
-											style="border-radius: 5px; width: auto;" /></th>
-									</tr>
-								</table>
+								ADMIN SCREEN : UNDER CONSTRUCTION....
 							</form>
 
 						</fieldset>
@@ -429,8 +412,8 @@ textarea {
 
 
 							</table>
-							<input type="submit" value="create Question" name="action" /> <input
-								type="submit" value="update Question" name="action" />
+							<input type="submit" class="btn btn-primary btn-lg btn-block loginBtn" value="create Question" name="action" /> <input
+								type="submit" value="update Question" name="action" class="btn btn-primary btn-lg btn-block loginBtn" />
 						</form>
 					</fieldset>
 
